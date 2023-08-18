@@ -1,0 +1,129 @@
+/* pages/publish/project/project.wxss */
+.project-page {
+  background: linear-gradient(180deg, #A3CEFF 0%, #F5F6F8 14%);
+  height: calc(100% - 44rpx);
+  width: 100%;
+  padding: 22rpx 32rpx;
+  position: relative;
+}
+
+.project-content {
+  height: calc(100% - 144rpx);
+  padding-bottom: 100rpx;
+  overflow: auto;
+}
+
+.upload-project {
+  position: absolute;
+  bottom: 20rpx;
+  width: 686rpx;
+  background: #165DFF;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  text-align: center;
+  padding: 22rpx 0;
+  font-size: 32rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 44rpx;
+}
+
+.dowm-icon {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 8rpx;
+  margin-right: 24rpx;
+}
+
+.input-content {
+  width: 520rpx;
+  background: #FFFFFF;
+  border-radius: 76rpx 76rpx 76rpx 76rpx;
+  padding: 20rpx 28rpx;
+}
+
+.search-icon {
+  width: 32rpx;
+  height: 32rpx;
+  padding-right: 18rpx;
+}
+
+.input-text {
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #AEB6C5;
+  line-height: 40rpx;
+}
+
+.project-toast {
+  font-size: 24rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #86909C;
+  line-height: 36rpx;
+  margin-top: 8rpx;
+  margin-bottom: 18rpx;
+}
+
+.project-item {
+  margin-top: 20rpx;
+  width: 633rpx;
+  padding: 24rpx 32rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+}
+
+.wait-text {
+  margin-left: 20rpx;
+  color: #165DFF;
+}
+
+.zcy-say {
+  width: 574rpx;
+  padding: 12rpx 24rpx;
+  background: #F5F7FB;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+
+  font-size: 24rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #86909C;
+}
+
+.leage-num {
+  color: #FF0000;
+}
+
+.line {
+  width: 622rpx;
+  height: 1rpx;
+  background: #F1F1F1;
+  margin: 16rpx 0;
+}
+
+.perfect-btn {
+  padding: 8rpx 24rpx;
+  background: #165DFF;
+  border-radius: 58rpx 58rpx 58rpx 58rpx;
+
+  font-size: 24rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 34rpx;
+}
+
+.address-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.address-text {
+  font-size: 24rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #86909C;
+  line-height: 36rpx;
+  padding-left: 8rpx;
+}

@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="dashboard">
+  <view class="banner">
+    <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+      <swiper-item>
+        <image src="/images/tab-icons/add.svg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/tab-icons/home.svg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/tab-icons/mine.svg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="card-box">
+    <view wx:for="{{list}}" wx:key="index"  class="card-item"  data-path="{{item.pagePath}}" data-index="{{index}}" >
+      <view class="title">{{item.title}}</view>
+      <view class="desc">{{item.desc}}</view>
+      <view class="btn" bindtap="switchPage">{{item.btnText}}</view>
+    </view>
+  </view>
+
+  <view class="tab-box">
+    <view class="tab-head">
+      <view wx:for="{{tabList}}" wx:key="index"  class="tab-item {{item.type === activeTab ? 'active-tab' : ''}}"  data-type="{{item.type}}" data-index="{{index}}" bindtap="switchTab">
+        <view class="tab-title">{{item.tabName}}</view>
+      </view>
+    </view>
+    <view class="tab-content">
+      <view class="tips">
+        <image src="/images/home/bell.svg"></image>
+        <view class="text">发一条需求可置换10条供应商信息</view>
+      </view>
+      <view class="input-model">
+        <view class="label">我需要</view>
+        <view class="short-line"></view>
+        <view class="place-text">如我需要物资</view>
+      </view>
+      
+    </view>
+  </view>
+
+  <view class="push-head">
+    <view class="push-title">每日推送</view>
+    <view class="type-box">
+      <view wx:for="{{pushTypeList}}" wx:key="index"  
+      class="push-item {{item.type === activePush ? 'active-push' : ''}}" data-path="{{item.pagePath}}" data-index="{{index}}" >
+        <view class="btn" bindtap="switchPushType">{{item.label}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="push-time">
+    <view class="label">距离上次推送</view>
+    <view class="time">2小时</view>
+  </view>
+  <view class="list">
+  <view class="list-item">
+    <needs-comp></needs-comp>
+  </view>
+  <view class="list-item">
+    <ptoject-comp></ptoject-comp>
+  </view>
+    <view class="list-item">
+    <company-comp></company-comp>
+  </view>
+  </view>
+
+</view>

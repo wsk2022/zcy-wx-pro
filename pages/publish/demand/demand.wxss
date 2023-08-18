@@ -1,0 +1,257 @@
+/* pages/publish/demand.wxss */
+.demand-page {
+  background: linear-gradient(180deg, #C3DFFF 0%, #F5F6F8 39%);
+  min-height: calc(100% - 44rpx);
+  width: 100%;
+  padding: 22rpx 0;
+}
+
+.flex-row-start {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 32rpx;
+}
+
+.head-icon {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+}
+
+.demand-person {
+  width: 526rpx;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #3E3E3E;
+  line-height: 33rpx;
+  padding: 24rpx;
+  background-color: #fff;
+}
+
+.three {
+  margin-left: 4rpx;
+  width: 0;
+  height: 0;
+  border-right: 18rpx solid #fff;
+  border-top: 19rpx solid transparent;
+  border-bottom: 19rpx solid transparent;
+}
+
+.address-content {
+  margin-left: 32rpx;
+  margin-top: 24rpx;
+  width: calc(100% - 128rpx);
+  background-color: #fff;
+  padding: 32rpx;
+  border-radius: 12rpx;
+}
+
+.address-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.you-address {
+  height: 36rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #1D2129;
+  line-height: 36rpx;
+}
+
+.address-line {
+  margin-top: 24rpx;
+  padding: 24rpx;
+  background: #F7F8FC;
+}
+
+.choose-toast {
+  height: 44rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #86909C;
+  line-height: 44rpx;
+}
+
+.address {
+  flex: 1;
+}
+
+.project-type {
+  margin-left: 32rpx;
+  margin-top: 24rpx;
+  padding: 32rpx;
+  background-color: #fff;
+  width: 622rpx;
+  border-radius: 12rpx;
+}
+
+.p-name {
+  font-size: 32rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #1D2129;
+  line-height: 36rpx;
+}
+
+.p-type {
+  margin-top: 28rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.type-item {
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  line-height: 33rpx;
+  padding: 8rpx 24rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+
+}
+
+.choose-style {
+  color: #165DFF;
+  background: #F2F6FF;
+}
+
+.default-style {
+  color: #86909C;
+  background: #F7F8FC;
+}
+
+.confirm-btn {
+  margin-left: 32rpx;
+  margin-top: 24rpx;
+  padding: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #165DFF;
+  width: 642rpx;
+  border-radius: 8rpx;
+  color: #ffffff;
+}
+
+.input-content {
+  padding: 20rpx 32rpx;
+  width: 686rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-top: 32rpx;
+}
+
+.weui-input {
+  width: 524rpx;
+  background: #F5F6F8;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  padding: 14rpx 12rpx 14rpx 24rpx;
+}
+
+.change-btn {
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 40rpx;
+  padding: 12rpx 24rpx;
+  margin-left: 24rpx;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  background: rgba(22, 93, 255, 0.5);
+}
+
+.ma-title {
+  font-size: 32rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #1D2129;
+  line-height: 36rpx;
+}
+
+.type-num {
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #165DFF;
+  line-height: 36rpx;
+}
+
+.slogan {
+  width: 638rpx;
+  background: linear-gradient(80deg, #FFF8F2 0%, rgba(255, 255, 255, 0.24) 100%);
+  border-radius: 12rpx 12rpx 12rpx 12rpx;
+  padding: 12rpx 24rpx;
+  margin-top: 20rpx;
+  margin-bottom: 24rpx;
+}
+
+.left-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.right-text {
+  height: 34rpx;
+  margin-left: 8rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FF7A00;
+  line-height: 34rpx;
+}
+
+.material-item {
+  padding: 8rpx 20rpx;
+  height: 44rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #1D2129;
+  line-height: 44rpx;
+
+  margin-bottom: 16rpx;
+}
+
+.choose-color {
+  background: #F2F6FF;
+}
+
+.default-color {
+  background: #F7F8FC;
+}
+
+.feat-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.mrl60 {
+  margin-left: 80rpx;
+}
+
+.cancle-btn {
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #165DFF;
+  line-height: 36rpx;
+  padding-right: 48rpx;
+
+}
+
+.cancle-width {
+  width: 120rpx;
+}
+
+.all-num {
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #9A9A9A;
+}

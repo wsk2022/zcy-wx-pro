@@ -1,0 +1,25 @@
+<!--pages/publish/perfect/perfect.wxml-->
+
+<view class="perfect-page">
+  <view class="flex-row-start">
+    <image class="head-icon" src="/images/publish/need-icon.png" />
+    <view class="flex-row">
+      <view class="three"></view>
+      <view class="demand-person">{{pageType==1?'你好，我是你的需求顾问，请描述你想解决的需求，我们为你推荐合适的解决方案':'你好，我是你的专业顾问，请选择你的物资，我们为你推荐合适的采购方'}}</view>
+    </view>
+  </view>
+
+
+
+  <view class="project-type">
+    
+  </view>
+
+
+
+  <view class="confirm-btn" bindtap="gotomate">确认提交</view>
+  <view class="input-content flex-row">
+    <input class="weui-input" placeholder="您也可以在此输入需求" />
+    <view class="change-btn">转化</view>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/publish/project/project.wxml-->
+<view class="project-page">
+  <view class="project-content">
+    <view class="flex-row">
+      <view>{{city}}</view>
+      <image class="dowm-icon" src="/images/publish/down-icon.png" />
+      <view class="flex-row input-content">
+        <image class="search-icon" src="/images/publish/search-icon.png" />
+        <view class="input-text">在此处搜索你想找的工程</view>
+      </view>
+    </view>
+    <view wx:for="{{projectList}}" wx:key="index" class="project-item">
+      <view class="project-name">{{item.name}}</view>
+      <view class="project-toast flex-row">
+        <text>距离你{{item.distance}}公里</text>
+        <text class="wait-text">{{item.waitNum}}条信息待完善</text>
+      </view>
+      <view class="zcy-say">
+        小紫有话说：完善一条工程信息可获得
+        <text class="leage-num">30</text>积分
+      </view>
+      <view class="line"></view>
+      <view class="flex-row-between">
+        <view class="flex-row">
+          <image class="address-icon" src="/images/publish/address-icon.png" />
+          <view class="address-text">{{item.address}}</view>
+        </view>
+        <view class="perfect-btn" bindtap="goToPerfect">去完善</view>
+      </view>
+    </view>
+  </view>
+  <view class="upload-project" bindtap="uploadProject">上传工程</view>
+</view>

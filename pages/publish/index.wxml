@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="publish-container">
+  <view class="title-page">
+    紫菜云供需服务大厅
+  </view>
+  <view class="title-toast">累计帮助基建行业企业解决 <text class="title-num">615587</text> 次问题</view>
+
+  <view class="flex-row-between fill-question">
+    <view class="fill-title">企业问诊·定制解决方案</view>
+    <view class="go-fill">填写调研问卷</view>
+  </view>
+
+  <view wx:for="{{list}}" wx:key="index" bindtap="goToPage" data-index="{{index}}" class="card-item {{index==2?'mrt16':''}}">
+    <view class="flex-row card-content  {{index==0?'border-line':''}}">
+      <image class="left-icon" src="{{item.img}}" />
+      <view class="middle">
+        <view class="have-title">{{item.name}}</view>
+        <view class="have-toast">{{item.toast}}</view>
+      </view>
+      <image class="right-icon" src="../../images/publish/right-icon-black.png" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+<!--pages/publish/upload/upload.wxml-->
+
+<view class="perfect-page">
+  <view class="flex-row-start">
+    <image class="head-icon" src="/images/publish/need-icon.png" />
+    <view class="flex-row">
+      <view class="three"></view>
+      <view class="demand-person">你好，我是你的专业顾问，你可以上传知道的工程信息，可以获取积分奖励</view>
+    </view>
+  </view>
+
+
+
+  <view class="project-type">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="form-item-box">
+        <view class="form-item-title">项目名称（必填）</view>
+        <input class="form-item-input" placeholder="请填写工程名称" />
+      </view>
+      <view class="form-item-box">
+        <view class="form-item-title">地址（必填）</view>
+        <view class="val-box">
+          <view wx:if="{{addressInfo}}" class="form-item-input">{{addressInfo.address}}</view>
+          <view wx:else class="form-item-input noval">请选择你的位置</view>
+          <!-- <input class="hide-input" placeholder="请选择项目地址" /> -->
+          <image bindtap="chooseAddress" class="address-icon" src="/images/publish/address-icon.png" />
+        </view>
+      </view>
+      <view class="form-item-box">
+        <view class="form-item-title">工程阶段</view>
+        <picker bindchange="bindPickerChange" range="{{array}}">
+          <view class="picker" wx:if="{{index!==null}}">
+            {{array[index]}}
+          </view>
+          <view wx:else class="nopicker">
+            <text>请选择工程阶段</text>
+            <image bindtap="chooseAddress" class="address-icon" src="/images/publish/ri-jt.png" />
+          </view>
+        </picker>
+        <!-- <input class="form-item-input" placeholder="请选择工程阶段" /> -->
+      </view>
+      <view class="form-item-box">
+        <view class="form-item-title">所属公司</view>
+        <picker bindchange="bindPickerChange" range="{{array}}">
+          <view class="picker" wx:if="{{index!==null}}">
+            {{array[index]}}
+          </view>
+          <view wx:else class="nopicker">
+            <text>请选择所属公司</text>
+            <image bindtap="chooseAddress" class="address-icon" src="/images/publish/ri-jt.png" />
+          </view>
+        </picker>
+        <!-- <input class="form-item-input" placeholder="请选择工程阶段" /> -->
+      </view>
+      <view class="form-item-box">
+        <view class="form-item-title">联系方式</view>
+        <input class="form-item-input" placeholder="请填写联系方式" />
+      </view>
+    </form>
+  </view>
+
+
+
+  <view class="confirm-btn" bindtap="gotomate">确认提交</view>
+  <view class="input-content flex-row">
+    <input class="weui-input" placeholder="您也可以在此输入需求" />
+    <view class="change-btn">转化</view>
+  </view>
+  <view class="station-box"></view>
+</view>

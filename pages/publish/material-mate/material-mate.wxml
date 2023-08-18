@@ -1,0 +1,23 @@
+<!--pages/publish/material-mate/material-mate.wxml-->
+<view class="material-mate-page">
+  <view class="slogan flex-row">
+    <image class="left-icon" src="/images/publish/judge.png" />
+    <view class="right-text">根据你的需求，为你推荐以下供应商</view>
+  </view>
+  <view wx:for="{{matchList}}" wx:key="index" class="card">
+    <view class="card-title">{{item.name}}</view>
+    <view class="card-item">项目名称：<text class="card-data">{{item.projectName}}</text></view>
+    <view class="card-item">工程类型：<text class="card-data">{{item.type}}</text></view>
+    <view class="card-item">所需物资：<text class="card-data">{{item.need}}</text></view>
+    <view class="line"></view>
+    <view class="flex-row-between">
+      <view class="flex-row">
+        <view class="btn-type" wx:for="{{item.btns}}" wx:for-index="idx" wx:for-item="btn" wx:key="idx">{{btn}}</view>
+      </view>
+      <view class="flex-row ask-btn">
+        <image class="ask-icon" src="/images/publish/phone-icon.png" />
+        <view bindtap="makePhone">咨询</view>
+      </view>
+    </view>
+  </view>
+</view>

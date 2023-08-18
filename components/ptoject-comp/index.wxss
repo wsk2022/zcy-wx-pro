@@ -1,0 +1,80 @@
+.project-component {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 24rpx;
+}
+.project-component .project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+.project-component .project-title .project-name{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #1D2129;
+  line-height: 36rpx;
+}
+.project-component .project-title .share{
+  height: 32rpx;
+  width: 32rpx;
+ }
+
+.project-component .filed-item  {
+  display: flex;
+  margin-bottom: 16rpx;
+}
+
+.project-component .filed-item .distance {
+  color: #86909C;
+  font-size: 24rpx;
+  margin-right: 16rpx;
+}
+.project-component .filed-item .text {
+  color: #165DFF;
+  font-size: 24rpx;
+}
+.project-component .project-location {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #86909C;
+  line-height: 36rpx;
+  display: flex;
+  align-items: center;
+}
+.project-component .project-location image{ 
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 8rpx;
+}
+.project-component .tips {
+  background: #F5F7FB;
+  border-radius: 8rpx;
+  padding: 12rpx 24rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #86909C;
+  line-height: 28rpx;
+  margin-bottom: 16rpx;
+}
+.project-component .tips .num {
+  color: #FF0000;
+  display: inline;
+}
+
+.project-component .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16rpx;
+  border-top: 1px solid #F1F1F1;
+}
+
+
+.project-component .bottom .btn { 
+  background: #165DFF;
+  border-radius: 60rpx;
+  padding: 12rpx 24rpx;
+  color: #FFFFFF;
+  font-size: 24rpx;
+}

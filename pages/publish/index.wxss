@@ -1,0 +1,106 @@
+/**index.wxss**/
+.publish-container {
+  padding: 60rpx 44rpx 0 44rpx;
+  background: #F1F6FF;
+  min-height: calc(100% - 60rpx);
+}
+
+.title-page {
+  height: 68rpx;
+  font-size: 48rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #000000;
+  line-height: 56rpx;
+}
+
+.title-toast {
+  height: 40rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #525252;
+  margin-top: 8rpx;
+}
+
+.title-num {
+  color: #000;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.fill-question {
+  margin-top: 104rpx;
+  background: #FCF2EA;
+  padding: 28rpx 32rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.fill-title {
+  height: 40rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #86441F;
+  line-height: 33rpx;
+}
+
+.go-fill {
+  font-size: 24rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #8A512F;
+  line-height: 28rpx;
+}
+
+.card-item {
+  padding: 0 32rpx;
+  background-color: #fff;
+}
+
+.card-content {
+  padding: 48rpx 0;
+}
+
+.border-line {
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.left-icon {
+  width: 72rpx;
+  height: 93rpx;
+}
+
+.right-icon {
+  width: 10rpx;
+  height: 20rpx;
+}
+
+.middle {
+  flex: 1;
+  padding-left: 24rpx;
+}
+
+.have-title {
+  height: 40rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #000000;
+  line-height: 40rpx;
+}
+
+.have-toast {
+  margin-top: 16rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #525252;
+  line-height: 28rpx;
+}
+
+.mrt16 {
+  margin-top: 20rpx;
+}
+

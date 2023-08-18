@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发布供需",
+  "navigationBarBackgroundColor": "#EEF5FE", 
+  "usingComponents": {
+    "tab-bar": "../../custom-tab-bar"
+  }
+}

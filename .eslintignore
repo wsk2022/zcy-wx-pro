@@ -1,0 +1,13 @@
+node_modules
+miniprogram_npm
+mock-data
+componts/canvas2image/*
+componts/imageCropper/*
+/utils/statistics/*
+/utils/ald/*
+/utils/gio-minp/*
+/utils/raven/*
+/utils/cos-wx-sdk-v5.js
+/utils/qqmap-wx-jssdk.js
+/utils/sensors/sensorsdata.min.js
+/utils/qqmap-wx-jssdk.min.js

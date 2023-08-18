@@ -1,0 +1,29 @@
+<view class="project-component">
+  <view class="project-title">
+    <view class="project-name">新建北京至雄安新区至商丘高速铁路</view>
+
+    <image src="/images/home/share.svg" alt="" class="share" />
+  </view>
+  <view class="filed-item">
+    <view class="distance">
+      距离你2.3公里
+    </view>
+    <view class="text">
+      5条信息待完善
+    </view>
+  </view>
+ 
+  <view class="tips">
+    小紫有话说：完善一条工程信息可获得<view class="num">30</view>积分
+  </view>
+  <view class="bottom">
+
+    <view class="project-location">
+      <image src="/images/home/location.svg" alt="" />
+      新建北京至雄安新区至商丘高速铁路
+    </view>
+    <view class="btn">
+        去完善
+      </view>
+  </view>
+</view>

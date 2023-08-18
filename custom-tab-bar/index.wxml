@@ -1,0 +1,12 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <view wx:for="{{list}}" wx:key="index"  class="tab-bar-item {{index === 1 ? 'tab-bar-center ': ''}}"  data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <image wx:if='{{index !== 1}}' src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></image>
+    <view  wx:else class="add-icon-box">
+      <view  class="add-icon">
+        <image src="../images/tab-icons/add.svg"></image>
+      </view>
+    </view>
+    <view style="color: {{selected === index ? selectedColor : color}}" class="text">{{item.text}}</view>
+  </view>
+</view>

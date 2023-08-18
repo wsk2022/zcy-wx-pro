@@ -1,0 +1,42 @@
+<view class="needs-comp">
+  <view class="needs-title">
+    <view class="needs-name">中铁十二局五公司物资采集</view>
+    <image src="/images/home/share.svg" alt="" class="share" />
+  </view>
+  <view class="status-box">
+    <view class="status">购买</view>
+    <view class="orange status">租赁</view>
+    <view class="green status">置换</view>
+  </view>
+  <view class="filed-item">
+    <view class="label">
+      项目名称：
+    </view>
+    <view class="text">雄安新区至商丘段 XSZQ-2 标</view>
+    
+  </view>
+  <view class="filed-item">
+    <view class="label">
+      工程类型：
+    </view>
+    <view class="text">铁路</view>
+    
+  </view>
+  <view class="filed-item">
+    <view class="label">
+      所需物资：
+    </view>
+    <view class="text">拼装式活动板房、拼装式活动板房、拼装式活动板房、拼装式活动板房 </view>
+    
+  </view>
+  <view class="bottom">
+    <view class="location">
+      <image src="/images/home/location.svg" alt="" />
+      新建北京至雄安新区至商丘高速铁路
+    </view>
+
+    <view class="phone">
+      <image src="/images/home/phone.svg" alt="" /> 咨询
+    </view>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+<!--pages/publish/demand.wxml-->
+
+<view class="demand-page">
+  <view class="flex-row-start">
+    <image class="head-icon" src="/images/publish/need-icon.png" />
+    <view class="flex-row">
+      <view class="three"></view>
+      <view class="demand-person">{{pageType==1?'你好，我是你的需求顾问，请描述你想解决的需求，我们为你推荐合适的解决方案':'你好，我是你的专业顾问，请选择你的物资，我们为你推荐合适的采购方'}}</view>
+    </view>
+  </view>
+  <!-- 位置 -->
+  <view class="address-content">
+    <view class="you-address">你的位置</view>
+    <view class="flex-row-between address-line">
+      <view wx:if="{{addressInfo}}" class="address">{{addressInfo.address}}</view>
+      <view wx:else class="choose-toast">请选择你的位置</view>
+      <image bindtap="chooseAddress" class="address-icon" src="/images/publish/address-icon.png" />
+    </view>
+  </view>
+  <!-- 工程类型 -->
+  <view class="project-type">
+    <view class="p-name">{{pageType==1?'工程类型（多选）':'物资适用项目（单选）'}}</view>
+    <view class="p-type">
+      <div wx:for="{{projectType}}" wx:key="index" bindtap="changeChoose" data-index="{{index}}" class="type-item {{fn.indexOf(chooseIndex,index)>-1?'choose-style':'default-style'}}">{{item}} </div>
+    </view>
+  </view>
+  <!-- 相关物资 -->
+  <view class="project-type">
+    <view class="flex-row-between">
+      <view class="ma-title">{{pageType==1?'相关物资':'我有物资'}}</view>
+      <view class="type-num">12种</view>
+    </view>
+
+    <view class="slogan flex-row">
+      <image class="left-icon" src="/images/publish/judge.png" />
+      <view class="right-text">根据你的需求，推算出你可能需要以下物资</view>
+    </view>
+
+    <view wx:for="{{materialsList}}" wx:key="index" class="flex-row-between material-item {{fn.indexOf(materialIndex,index)>-1?'choose-color':'default-color'}}" bindtap="changeChooseMaterial" data-index="{{index}}">
+      <view class="flex-row">
+        <view>{{item.type}}</view>
+        <view class="mrl60">{{item.subType}}</view>
+      </view>
+      <image wx:if="{{fn.indexOf(materialIndex,index)>-1}}" class="feat-icon" src="/images/publish/right-feat.png" />
+    </view>
+    <view class="flex-row">
+      <view class="cancle-btn cancle-width" bindtap="changeChooseAll">{{materialIndex.length==materialsList.length?'取消全选':'全选'}}</view>
+      <view class="all-num">总计：<text class="cancle-btn">{{materialsList.length}}种</text></view>
+    </view>
+  </view>
+  <!-- 我希望 -->
+  <view class="project-type">
+    <view class="p-name">{{pageType==1?'我希望（多选）':'我想要（多选）'}}</view>
+    <view class="p-type">
+      <div wx:for="{{hopeType}}" wx:key="index" bindtap="changeChooseHope" data-index="{{index}}" class="type-item {{fn.indexOf(hopeIndex,index)>-1?'choose-style':'default-style'}}">{{item}}</div>
+    </view>
+  </view>
+
+  <view class="confirm-btn" bindtap="gotomate">确定</view>
+  <view class="input-content flex-row">
+    <input class="weui-input" placeholder="您也可以在此输入需求" />
+    <view class="change-btn">转化</view>
+  </view>
+</view>
+<wxs module="fn">
+  module.exports = {
+    indexOf: function (arr, index) {
+      return arr.indexOf(index);
+    }
+  }
+</wxs>

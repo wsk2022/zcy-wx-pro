@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText":"首页",
+  "navigationBarBackgroundColor": "#C3DFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ptoject-comp": "../../components/ptoject-comp",
+    "company-comp": "../../components/company-comp",
+    "needs-comp": "../../components/needs-comp"
+  }
+}

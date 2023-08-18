@@ -1,0 +1,43 @@
+<view class="company-comp">
+  <view class="company-head">
+    <view class="company-name">淄博惠信达再生资源有限公司
+      <image src="/images/home/company-logo.svg" alt="" />
+    </view>
+    <image src="/images/home/share.svg" alt="" class="share" />
+  </view>
+  <view class="status-box">
+    <view class="text">
+      覆盖物资 <view class="num">4种</view>
+    </view>
+    <view class="orange status">出租</view>
+    <view class="purple status">代存</view>
+  </view>
+  <view class="content">
+    <view class="goods-item">
+      <image src="/images/home/company-logo.svg" alt="" />
+      <view class="goods-name">活动板房</view>
+      <view class="goods-price">￥2350/吨</view>
+    </view>
+    <view class="goods-item">
+      <image src="/images/home/company-logo.svg" alt="" />
+      <view class="goods-name">活动板房</view>
+      <view class="goods-price">￥2350/吨</view>
+    </view>
+    <view class="goods-item">
+      <image src="/images/home/company-logo.svg" alt="" />
+      <view class="goods-name">活动板房</view>
+      <view class="goods-price">￥2350/吨</view>
+    </view>
+  </view>
+
+  <view class="bottom">
+    <view class="location">
+      <image src="/images/home/location.svg" alt="" />
+      新建北京至雄安新区至商丘高速铁路
+    </view>
+
+    <view class="phone">
+      <image src="/images/home/phone.svg" alt="" /> 咨询
+    </view>
+  </view>
+</view>
